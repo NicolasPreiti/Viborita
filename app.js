@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(express.static("./public"))
 
 app.get("/", (req, res)=>{
-    res.send("Server funcionando");
+    res.send("Accediste a viborita");
 })
 
 app.post("/", (req, res)=>{
