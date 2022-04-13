@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res)=>{
+    res.send("otra vez no se cargo")
 })
 
 app.post("/", (req, res)=>{
