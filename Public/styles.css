@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "ubuntu";
+}
+
+.conteiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50px 1fr;
+      grid-template-rows: 50px 1fr;
+  width: 100%;
+  height: 100vh;
+  background-color: #3c29eb;
+}
+
+.title {
+  color: #fff;
+  margin: 20px;
+}
+
+.conteiner-arcade {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border: 7px solid black;
+  border-radius: 16px;
+  background-color: #3ab659;
+}
+
+.conteiner-arcade-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  background-color: #3ab659;
+}
+
+.conteiner-arcade-menu__logo {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.conteiner-arcade-menu__logo > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.conteiner-arcade-menu__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.conteiner-arcade-menu__buttons > #startGame {
+  font-family: "ubuntu";
+  font-size: 15px;
+  cursor: pointer;
+  padding: 14px;
+  border: 3px solid #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #fff;
+  background-color: #4621ce;
+}
+
+.conteiner-arcade__canva {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "ubuntu";
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(60, 41, 235);
+}
+
+.title {
+    color: #fff;
+    margin: 20px;
+}
+
+.conteiner-arcade {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    background-color: rgb(58, 182, 89);
+
+    &-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: (repeat(3, 1fr));
+        width: 100%;
+        height: 100%;
+        background-color: rgb(58, 182, 89);
+
+        &__logo {
+            grid-column: 1 / 4;
+            grid-row: 1 / 3;
+
+            &>img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+
+            &>#startGame {
+                font-family: "ubuntu";
+                font-size: 15px;
+                cursor: pointer;
+                padding: 14px;
+                border: 3px solid #000;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                color: #fff;
+                background-color: rgb(70, 33, 206);
+            }
+        }
+    }
+
+    &__canva {
+        display: none;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #000;
+        object-fit: cover;
+    };
+}
+    
