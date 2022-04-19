@@ -14,10 +14,10 @@ const drawSnake = (ctx, snake, food, SQUAD_SIZE)=>{
     for (let cuerpo in snake) {
         const {posX, posY} = snake[cuerpo];
         if (cuerpo == 0) {
-            ctx.fillStyle = "#000";
+            ctx.fillStyle = "#fff";
             ctx.fillRect(posX, posY, SQUAD_SIZE, SQUAD_SIZE);
         } else {
-            ctx.fillStyle = "#000";
+            ctx.fillStyle = "#fff";
             ctx.fillRect(posX, posY, SQUAD_SIZE, SQUAD_SIZE);
         }
     };

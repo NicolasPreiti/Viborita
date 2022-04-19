@@ -7,6 +7,25 @@
 
 html {
   font-family: "ubuntu";
+  font-size: 10px;
+}
+
+.arcade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 70px;
+  border: 1px solid #ffb30e;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
+          box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
+  background-color: black;
 }
 
 .conteiner {
@@ -16,12 +35,18 @@ html {
       grid-template-columns: 1fr;
   -ms-grid-rows: 50px 1fr;
       grid-template-rows: 50px 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #3c29eb;
+  background-color: #225bf7;
 }
 
 .title {
+  justify-self: flex-start;
+  font-size: 3.3rem;
   color: #fff;
   margin: 20px;
 }
@@ -35,10 +60,8 @@ html {
       align-self: center;
   width: 400px;
   height: 400px;
-  padding: 20px;
   border: 7px solid black;
-  border-radius: 16px;
-  background-color: #3ab659;
+  background-color: black;
 }
 
 .conteiner-arcade-menu {
@@ -50,7 +73,9 @@ html {
       grid-template-rows: repeat(3, 1fr);
   width: 100%;
   height: 100%;
-  background-color: #3ab659;
+  -webkit-box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 10px #ffb30e, 0px 0px 10px #ffb30e;
+          box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 10px #ffb30e, 0px 0px 10px #ffb30e;
+  background-color: black;
 }
 
 .conteiner-arcade-menu__logo {
@@ -89,15 +114,25 @@ html {
 
 .conteiner-arcade-menu__buttons > #startGame {
   font-family: "ubuntu";
-  font-size: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
   cursor: pointer;
   padding: 14px;
-  border: 3px solid #000;
+  border: 1px solid #ffb30e;
   border-top-left-radius: 5px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  color: #fff;
-  background-color: #4621ce;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 6px #ffb30e, 0px 0px 6px #ffb30e;
+          box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 6px #ffb30e, 0px 0px 6px #ffb30e;
+  background-color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.conteiner-arcade-menu__buttons > #startGame:hover {
+  -webkit-box-shadow: 0px 0px 3px #ffb30e, 0px 0px 3px #ffb30e, 0px 0px 15px #ffb30e, 0px 0px 15px #ffb30e;
+          box-shadow: 0px 0px 3px #ffb30e, 0px 0px 3px #ffb30e, 0px 0px 15px #ffb30e, 0px 0px 15px #ffb30e;
 }
 
 .conteiner-arcade__canva {
@@ -107,5 +142,8 @@ html {
   border: 2px solid #000;
   -o-object-fit: cover;
      object-fit: cover;
+  border: 1px solid #ffb30e;
+  -webkit-box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 10px #ffb30e, 0px 0px 10px #ffb30e;
+          box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 10px #ffb30e, 0px 0px 10px #ffb30e;
 }
 /*# sourceMappingURL=styles.css.map */

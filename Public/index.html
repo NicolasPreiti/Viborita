@@ -11,16 +11,19 @@
 <body>
     <div class="conteiner">
         <h1 class="title">LA VIBORITA POR NICOLAS PREITI</h1>
-        <div class="conteiner-arcade">
-            <div id="menu" class="conteiner-arcade-menu">
-                <div class="conteiner-arcade-menu__logo">
-                    <img src="images/snake.webp" alt="">
+
+        <div class="arcade">
+            <div class="conteiner-arcade">
+                <div id="menu" class="conteiner-arcade-menu">
+                    <div class="conteiner-arcade-menu__logo">
+                        <img src="images/snake.webp" alt="">
+                    </div>
+                    <div class="conteiner-arcade-menu__buttons">
+                        <button id="startGame">START GAME</button>
+                    </div>
                 </div>
-                <div class="conteiner-arcade-menu__buttons">
-                    <button id="startGame">START GAME</button>
-                </div>
+                <canvas id="canva" class="conteiner-arcade__canva" width="300" height="300"></canvas>
             </div>
-            <canvas id="canva" class="conteiner-arcade__canva" width="300" height="300"></canvas>
         </div>
         <script src="scripts.js" type="module"></script>
     </div>
