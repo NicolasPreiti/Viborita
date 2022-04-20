@@ -2,7 +2,6 @@ import drawSnake from "./js/draw.js";
 import update from "./js/update.js";
 import directionSnake from "./js/directionSnake.js";
 import collisions from "./js/collisions.js";
-import addSnakePiece from "./js/addSnakePiece.js";
 import foodGenerator from "./js/foodGenerator.js";
 import finishGame from "./js/finishGame.js";
 
@@ -11,6 +10,7 @@ const lienzo = document.getElementById("canva");
 const btnStartGame = document.getElementById("startGame");
 const menu = document.getElementById("menu");
 const ctx = lienzo.getContext("2d");
+const score = document.getElementById("score");
 
 
 //Cuerpo de la serpiente
@@ -32,7 +32,7 @@ const directions = {
 //Movimientos.
 let moves = {
     MOVE_X: 0,
-    MOVE_Y: 0
+    MOVE_Y: 0,
 };
 
 //Comida.
@@ -59,7 +59,8 @@ const startGame = ()=>{
 
     moves = {
         MOVE_X: 0,
-        MOVE_Y: 0
+        MOVE_Y: 0,
+        score: snake.length
     }
 
     food = {
@@ -69,6 +70,7 @@ const startGame = ()=>{
     };
 
     directions.current = 3;
+    score.textContent = `SCORE: ${moves.score}`;
     
     foodGenerator(snake, food, SQUAD_SIZE);
     drawSnake(ctx, snake, food);

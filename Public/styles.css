@@ -34,9 +34,12 @@ html {
 }
 
 .arcade {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -49,6 +52,14 @@ html {
   -webkit-box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
           box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
   background-color: black;
+}
+
+.arcade__score {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 1.7rem;
+  margin-top: 30px;
+  color: #fff;
 }
 
 .screen {
@@ -73,6 +84,7 @@ html {
       grid-template-rows: repeat(3, 1fr);
   width: 100%;
   height: 100%;
+  border: 1px solid #ffb30e;
   -webkit-box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 10px #ffb30e, 0px 0px 10px #ffb30e;
           box-shadow: 0px 0px 1px #ffb30e, 0px 0px 1px #ffb30e, 0px 0px 10px #ffb30e, 0px 0px 10px #ffb30e;
   background-color: black;
@@ -139,7 +151,6 @@ html {
   display: none;
   width: 100%;
   height: 100%;
-  border: 2px solid #000;
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid #ffb30e;

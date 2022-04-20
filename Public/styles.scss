@@ -31,7 +31,8 @@ $neon-color: rgb(255, 179, 14);
 }
 
 .arcade {
-    display: flex;
+    display: grid;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px 70px;
@@ -42,6 +43,13 @@ $neon-color: rgb(255, 179, 14);
                 0px 0px 13px $neon-color,
                 0px 0px 13px $neon-color;
     background-color: rgb(0, 0, 0);
+
+    &__score {
+        justify-self: center;
+        font-size: 1.7rem;
+        margin-top: 30px;
+        color: #fff;
+    }
 }
 
 .screen {
@@ -59,6 +67,7 @@ $neon-color: rgb(255, 179, 14);
         grid-template-rows: (repeat(3, 1fr));
         width: 100%;
         height: 100%;
+        border: 1px solid $neon-color;
         box-shadow: 0px 0px 1px $neon-color,
                     0px 0px 1px $neon-color,
                     0px 0px 10px $neon-color,
@@ -115,7 +124,6 @@ $neon-color: rgb(255, 179, 14);
         display: none;
         width: 100%;
         height: 100%;
-        border: 2px solid #000;
         object-fit: cover;
         border: 1px solid $neon-color;
         box-shadow: 0px 0px 1px $neon-color,
