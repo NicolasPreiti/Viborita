@@ -75,8 +75,7 @@ const startGame = ()=>{
 
     currentGame = setInterval(()=>{
         directionSnake(directions, moves, SQUAD_SIZE);
-        update(snake, moves);
-        addSnakePiece(snake, moves, food);
+        update(snake, moves, food);
         foodGenerator(snake, food, SQUAD_SIZE);
         collisions(currentGame, snake, lienzo, menu, finishGame);
         drawSnake(ctx, snake, food, SQUAD_SIZE);

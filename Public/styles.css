@@ -10,24 +10,6 @@ html {
   font-size: 10px;
 }
 
-.arcade {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 70px;
-  border: 1px solid #ffb30e;
-  border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
-          box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
-  background-color: black;
-}
-
 .conteiner {
   display: -ms-grid;
   display: grid;
@@ -51,7 +33,25 @@ html {
   margin: 20px;
 }
 
-.conteiner-arcade {
+.arcade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 70px;
+  border: 1px solid #ffb30e;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
+          box-shadow: 0px 0px 2px #ffb30e, 0px 0px 2px #ffb30e, 0px 0px 13px #ffb30e, 0px 0px 13px #ffb30e;
+  background-color: black;
+}
+
+.screen {
   position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -64,7 +64,7 @@ html {
   background-color: black;
 }
 
-.conteiner-arcade-menu {
+.screen__menu {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -78,7 +78,7 @@ html {
   background-color: black;
 }
 
-.conteiner-arcade-menu__logo {
+.screen__menu__logo {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / 4;
@@ -87,14 +87,14 @@ html {
   grid-row: 1 / 3;
 }
 
-.conteiner-arcade-menu__logo > img {
+.screen__menu__logo > img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.conteiner-arcade-menu__buttons {
+.screen__menu__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +112,7 @@ html {
   grid-row: 3 / 4;
 }
 
-.conteiner-arcade-menu__buttons > #startGame {
+.screen__menu__buttons > #startGame {
   font-family: "ubuntu";
   font-size: 1.6rem;
   font-weight: bold;
@@ -130,12 +130,12 @@ html {
   transition: all 0.3s;
 }
 
-.conteiner-arcade-menu__buttons > #startGame:hover {
+.screen__menu__buttons > #startGame:hover {
   -webkit-box-shadow: 0px 0px 3px #ffb30e, 0px 0px 3px #ffb30e, 0px 0px 15px #ffb30e, 0px 0px 15px #ffb30e;
           box-shadow: 0px 0px 3px #ffb30e, 0px 0px 3px #ffb30e, 0px 0px 15px #ffb30e, 0px 0px 15px #ffb30e;
 }
 
-.conteiner-arcade__canva {
+.screen__canva {
   display: none;
   width: 100%;
   height: 100%;

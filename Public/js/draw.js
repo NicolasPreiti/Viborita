@@ -9,6 +9,23 @@ const drawSnake = (ctx, snake, food, SQUAD_SIZE)=>{
     ctx.fillRect(posX, posY, SQUAD_SIZE, SQUAD_SIZE);
     //ctx.strokeStyle = "#000";
     //ctx.strokeRect(posX, posY, SQUAD_SIZE, SQUAD_SIZE);
+    
+    // ctx.strokeStyle = "#fff";
+    // ctx.moveTo(10, 10);
+    // ctx.lineTo(10, 290);
+    // ctx.stroke();
+
+    // ctx.moveTo(290, 10);
+    // ctx.lineTo(290, 290);
+    // ctx.stroke();
+
+    // ctx.moveTo(10, 10);
+    // ctx.lineTo(290, 10);
+    // ctx.stroke();
+
+    // ctx.moveTo(10, 290);
+    // ctx.lineTo(290, 290);
+    // ctx.stroke();
 
     //Dibuja la serpiente.
     for (let cuerpo in snake) {

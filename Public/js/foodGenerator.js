@@ -9,7 +9,8 @@ const foodGenerator = (snake, food, SQUAD_SIZE)=>{
         //Generar otra posicion si se sobrepone con la serpiente.
         for (let piece = 0 ; piece < snake.length ; piece++) {
             if (snake[piece].posX == FOOD_POS_X && snake[piece].posY == FOOD_POS_Y) {
-                return foodGenerator();
+                console.log("la comida aparecio donde la serpiente")
+                return foodGenerator(snake, food, SQUAD_SIZE);
             };
         };
         food.active = 1;
