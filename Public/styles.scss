@@ -46,7 +46,8 @@ $neon-color: rgb(255, 179, 14);
 
     &__score {
         justify-self: center;
-        font-size: 1.7rem;
+        font-size: 2rem;
+        font-weight: bold;
         margin-top: 30px;
         color: #fff;
     }
@@ -121,6 +122,7 @@ $neon-color: rgb(255, 179, 14);
     }
 
     &__canva {
+        position: absolute;
         display: none;
         width: 100%;
         height: 100%;
@@ -130,5 +132,47 @@ $neon-color: rgb(255, 179, 14);
                     0px 0px 1px $neon-color,
                     0px 0px 10px $neon-color,
                     0px 0px 10px $neon-color;
+    }
+
+    &__lose {
+        display: none;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+
+        &>h3 {
+            text-align: center;
+            font-size: 2.7rem;
+            color: #f00;
+        }
+
+        &>button {
+            font-family: "ubuntu";
+            font-size: 1.6rem;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 14px;
+            border: 1px solid $neon-color;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            color: #000;
+            box-shadow: 0px 0px 1px $neon-color,
+                        0px 0px 1px $neon-color,
+                        0px 0px 6px $neon-color,
+                        0px 0px 6px $neon-color;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.3s;
+
+            &:hover {
+            box-shadow: 0px 0px 3px $neon-color,
+                        0px 0px 3px $neon-color,
+                        0px 0px 15px $neon-color,
+                        0px 0px 15px $neon-color;    
+            }
+        }
     }
 }

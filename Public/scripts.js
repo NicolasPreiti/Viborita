@@ -8,7 +8,9 @@ import finishGame from "./js/finishGame.js";
 //Elementos HTML
 const lienzo = document.getElementById("canva");
 const btnStartGame = document.getElementById("startGame");
+const btnRestart = document.getElementById("restart");
 const menu = document.getElementById("menu");
+const lose = document.getElementById("lose");
 const ctx = lienzo.getContext("2d");
 const score = document.getElementById("score");
 
@@ -88,6 +90,11 @@ const startGame = ()=>{
 btnStartGame.addEventListener("click", ()=>{
     menu.style.display = "none";
     lienzo.style.display = "block";
+    startGame(); 
+});
+
+btnRestart.addEventListener("click", ()=>{
+    lose.style.display = "none";
     startGame(); 
 });
 

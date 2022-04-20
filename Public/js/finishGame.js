@@ -1,6 +1,7 @@
+const lose = document.getElementById("lose");
+
 const finishGame = (menu, lienzo)=>{
-    menu.style.display = "grid";
-    lienzo.style.display = "none";
+    lose.style.display = "grid"
 };
 
 export default finishGame;
