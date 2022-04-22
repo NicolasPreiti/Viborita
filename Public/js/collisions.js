@@ -16,17 +16,6 @@ const collisions = (currentGame, snake, lienzo, menu, finishGame)=>{
         let piecePosX = snake[piece].posX;
         let piecePosY = snake[piece].posY;
         if (headPosX == piecePosX && headPosY == piecePosY) {
-            /*
-            let peticion = fetch("/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                SCORE
-            })
-            })
-            */
             finishGame(menu, lienzo);
             return clearInterval(currentGame);
         }
